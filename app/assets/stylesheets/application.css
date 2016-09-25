@@ -13,3 +13,4 @@
  *= require_tree .
  *= require_self
  */
+body.welcome {background:#337ab7;}
