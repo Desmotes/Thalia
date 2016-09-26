@@ -1,7 +1,5 @@
 <% content_for :title, "Desmotes' Home" %>
 
-
-
 <!-- Navigation bar -->
 
         <!-- Navigation -->
@@ -19,16 +17,14 @@
 
             <ul class="nav navbar-top-links navbar-right">
 
-
-
                 <!-- /.dropdown -->
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                         <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-user">
-                        <li><a href="#"><i class="fa fa-user fa-fw"></i>User login</a>
-                        </li>
+                        <!-- <li><a href="#"><i class="fa fa-user fa-fw"></i>User login</a>
+                        </li> -->
                         <li class="divider"></li>
                         <li><a href="https://www.google.com"><i class="fa fa-sign-out fa-fw"></i> Exit</a>
                         </li>
@@ -43,7 +39,6 @@
 
     <br>
 
-
     <!-- Page container -->
     <div class="container">
 
@@ -53,18 +48,75 @@
             <h1> <small>Cloud enabled Monitoring Service</small></h1>
         </header>
 
+        <!-- <hr> -->
 
+        <div class="row">
+          <!-- login panel -->
+          <div class="col-md-4 col-md-offset-4">
+            <div class="panel panel-primary">
+            <!-- <div class="panel-heading">Login</div> -->
+            <div class="panel-body">
 
-        <hr>
+            <!-- Login Form -->
+            <form role="form">
 
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-md col-md-offset-5">
-                    <p style="color: #f8f8f8"> Desmotes' Copyright &copy; Website <%=Date.today.year%></p>
+            <!-- Username Field -->
+                <div class="row">
+                    <div class="form-group col-xs-12">
+                    <label for="username"><span class="text-danger" style="margin-right:5px;">*</span>Username:</label>
+                        <div class="input-group">
+                            <input class="form-control" id="username" type="text" name="username" placeholder="Username" required/>
+                            <span class="input-group-btn">
+                                <label class="btn btn-primary">
+                                  <span class="glyphicon glyphicon-user" aria-hidden="true">
+                                  </label>
+                            </span>
+                            </span>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- Content Field -->
+                <div class="row">
+                    <div class="form-group col-xs-12">
+                        <label for="password"><span class="text-danger" style="margin-right:5px;">*</span>Password:</label>
+                        <div class="input-group">
+                            <input class="form-control" id="password" type="password" name="password" placeholder="Password" required/>
+                            <span class="input-group-btn" onclick="show_pass(); return false">
+                              <!-- onclick="show_pass(); return false" -->
+                                <label class="btn btn-primary"><span class="glyphicon glyphicon-lock" aria-hidden="true"></label>
+                            </span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Login Button -->
+                <div class="row">
+                    <div class="form-group col-xs-4">
+                        <button class="btn btn-primary" type="submit">Submit</button>
+                    </div>
+                </div>
+
+            </form>
+            <!-- End of Login Form -->
+
             </div>
-        </footer>
+          </div>
+        </div>
+      </div>
+
+
+      <hr>
+
+      <!-- Footer -->
+      <footer>
+          <div class="row">
+            <div class="col-md col-md-offset-5">
+              <p style="color: #f8f8f8"> Desmotes' Copyright &copy; Website <%=Date.today.year%></p>
+            </div>
+          </div>
+      </footer>
 
     </div>
     <!-- /.container -->
