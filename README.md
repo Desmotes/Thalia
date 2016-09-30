@@ -15,6 +15,10 @@ application *Thalia* up and running.
 
 > 5.0.0
 
+## Setup environment 
+
+All additional changes and information can be found at Thalia's [Wiki](https://github.com/Desmotes/Thalia/wiki).
+
 ## Running
 
 * The only thing you need to do, is to run the following command:
@@ -53,6 +57,7 @@ end
 
 #### Welcome page
 
-![screen shot 2016-09-26 at 01 28 29](https://cloud.githubusercontent.com/assets/11991105/18818694/a0577b84-8388-11e6-961e-116d3f13d556.png)
+![screen shot 2016-10-01 at 02 32 36](https://cloud.githubusercontent.com/assets/11991105/19009733/62d1f4d8-877f-11e6-8d08-f7dd67209010.png)
+
 
 
