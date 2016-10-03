@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
   # get 'welcome_page/index'
   get  '/index',  to: 'welcome_page#index'
-  get '/profile', to: ''
+  get '/profile', to: 'sessions#login'
   get 'users/signin'
   # match 'users/signin', to: 'devise/users#signin', via: :post
   # get  '/signin',    to: 'users#signup'
