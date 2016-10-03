@@ -58,14 +58,15 @@
             <div class="panel-body">
 
             <!-- Login Form -->
-            <form role="form">
-
+            <!-- <form role="form" action="/users/signin" method="post"> -->
+            <%= bootstrap_form_tag url: 'login' do |f| %>
             <!-- Username Field -->
                 <div class="row">
                     <div class="form-group col-xs-12">
-                    <label for="username"><span class="text-danger" style="margin-right:5px;">*</span>Username:</label>
+                    <!-- <label for="username"><span class="text-danger" style="margin-right:5px;">*</span>Username:</label> -->
                         <div class="input-group">
-                            <input class="form-control" id="username" type="text" name="username" placeholder="Username" required style="width: 95%;"/>
+                            <!-- <input class="form-control" id="username" type="text" name="username" placeholder="Username" required style="width: 95%;"/> -->
+                            <%= f.text_field :username, label: "Username:" , class: "form-control" , placeholder: "Username" , wrapper: { class: 'input-group'}%>
                             <span class="input-group-btn">
                                 <label class="btn" >
                                   <!-- style="width: 290px;" -->
@@ -81,12 +82,13 @@
                 <!-- Content Field -->
                 <div class="row">
                     <div class="form-group col-xs-12">
-                        <label for="password"><span class="text-danger" style="margin-right:5px;">*</span>Password:</label>
+                        <!-- <label for="password"><span class="text-danger" style="margin-right:5px;">*</span>Password:</label> -->
                         <div class="input-group">
-                            <input class="form-control" id="password" type="password" name="password" placeholder="Password" required/>
-                            <span class="input-group-btn" onclick="show_pass(); return false">
+                            <!-- <input class="form-control" id="password" type="password" name="password" placeholder="Password" required/> -->
+                            <%= f.password_field :password, label: "Password:" , class: "form-control" , placeholder: "Password" , wrapper: { class: 'input-group'} %>
+                            <span class="input-group-btn" onclick="show_pass(); return false" >
                               <!-- onclick="show_pass(); return false" -->
-                                <label class="btn btn-primary"><span class="glyphicon glyphicon-lock" aria-hidden="true"></label>
+                                <label class="btn btn-primary"><span class="glyphicon glyphicon-lock" aria-hidden="true" ></label>
                             </span>
                             </span>
                         </div>
@@ -96,11 +98,13 @@
                 <!-- Login Button -->
                 <div class="row">
                     <div class="form-group col-xs-4">
-                        <button class="btn btn-primary" type="submit">Submit</button>
+                        <!-- <button class="btn btn-primary" type="submit">Submit</button> -->
+                        <%= f.submit "Log In", class: "btn btn-primary" %>
                     </div>
                 </div>
+              <% end %>
 
-            </form>
+            <!-- </form> -->
             <!-- End of Login Form -->
 
             </div>
