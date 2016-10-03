@@ -1,6 +1,15 @@
 Rails.application.routes.draw do
-  get 'welcome_page/index'
-
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  resources :users
   root 'welcome_page#index'
+  # get 'sessions/login'
+  match 'login', to: 'sessions#login', via: :all
+
+  # get 'welcome_page/index'
+  get  '/index',    to: 'welcome_page#index'
+
+  get 'users/signin'
+  # match 'users/signin', to: 'devise/users#signin', via: :post
+  # get  '/signin',    to: 'users#signup'
+  # Now, we can the navigate to /users/<id>
+
 end
