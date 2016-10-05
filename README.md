@@ -61,8 +61,7 @@ end
 
 #### Dashboard Page
 
-![screen shot 2016-10-05 at 03 06 45](https://cloud.githubusercontent.com/assets/11991105/19096878/ce992cb4-8aa8-11e6-856e-51d24b4ddddb.png)
-
+![screen shot 2016-10-05 at 03 08 10](https://cloud.githubusercontent.com/assets/11991105/19096897/fc3244b2-8aa8-11e6-9481-db252f2b721f.png)
 
 
 
