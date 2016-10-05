@@ -11,7 +11,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/#index">Desmotes Admin Panel</a>
+                <a class="navbar-brand" href="/#index">Desmotes Panel</a>
             </div>
             <!-- /.navbar-header -->
 
@@ -25,7 +25,7 @@
                     <ul class="dropdown-menu dropdown-user">
                         <!-- <li><a href="#"><i class="fa fa-user fa-fw"></i>User login</a>
                         </li> -->
-                        <li class="divider"></li>
+                        <!-- <li class="divider"></li> -->
                         <li><a href="https://www.google.com"><i class="fa fa-sign-out fa-fw"></i> Exit</a>
                         </li>
                     </ul>
@@ -45,7 +45,7 @@
         <!-- Jumbotron Header -->
         <header class="jumbotron hero-spacer" style="background: #f8f8f8">
             <h1>Desmotes</h1>
-            <h1> <small>Cloud enabled Monitoring Service</small></h1>
+            <h1> <small>Cloud enabled Monitoring as a Service</small></h1>
         </header>
 
         <!-- <hr> -->
@@ -101,6 +101,12 @@
                         <!-- <button class="btn btn-primary" type="submit">Submit</button> -->
                         <%= f.submit "Log In", class: "btn btn-primary" %>
                     </div>
+
+                    <% if flash[:string] %>
+                      <label> <span class="text-danger" style="margin-right:5px;">Username or Password is empty</span></label>
+                    <% elsif flash[:empty] %>
+                      <label> <span class="text-danger" style="margin-right:5px;">Wrong Username or Password</span></label>
+                    <% end %>
                 </div>
               <% end %>
 
