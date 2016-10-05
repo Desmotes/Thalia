@@ -55,9 +55,14 @@ end
 
 ## Web App Screenshots
 
-#### Welcome page
+#### Welcome Page
 
 ![screen shot 2016-10-01 at 02 32 36](https://cloud.githubusercontent.com/assets/11991105/19009733/62d1f4d8-877f-11e6-8d08-f7dd67209010.png)
+
+#### Dashboard Page
+
+![screen shot 2016-10-05 at 03 06 45](https://cloud.githubusercontent.com/assets/11991105/19096878/ce992cb4-8aa8-11e6-856e-51d24b4ddddb.png)
+
 
 
 
